@@ -2,46 +2,126 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Healthy Homeade Cuisine</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/normalize.css">
-		<link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<div class="container">
-			<header class="page-header">
-				<ul class="nav nav-pills pull-right">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="how-it-works.html">How it Works</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="about.html">About Chef Denise</a></li>
-				</ul>	
-				<h3>Healthy Homemade Cuisine</h3>
-			</header>
-			<main>
-				<div class="jumbotron">
-					<h1>Your Personal Chef</h1>
-					<p>Chef Denise is ready to make delicious meals for you and your family! She specializes in chef service and cooking training. Please explore this site to see how she can help you today!</p>
+ 
+		<img class="img-responsive logo hidden-xs" src="img/denise-header4.jpg">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="index.html">Healthy Homemade Cuisine</a>
 				</div>
 
-				<div class="row">
-					<div class="col-sm-6">
-						<h2>Difference between Personal Chef and Private Chef</h2>
-						<p>A private chef is employed by one individual or family full time, and is often “living in”, and preparing up to 3 meals per day. A personal chef serves several clients, usually one per day and provides multiple meals that are custom designed for the client’s requests and requirements.</p>
-					</div>
-					<div class="col-sm-6">
-						<h2>Complimentary food assessment</h2>
-						<p>Your tastes and preferences are the first priority. Before any menus are planned, we will meet and do food assessment. Your likes, dislikes, dietary restrictions, and any goals you are trying to achieve will be documented. We develop a truly personalized service plan.</p>
+				<div class="collapse navbar-collapse" id="main-navbar">
+					<ul class="nav navbar-nav navbar-left">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Info <span class="caret"</span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">How it Works</a></li>
+								<li><a href="#">Sample Menu</a></li>
+								<li class="divider"></li>
+								<li><a href="faq.html">FAQ</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="box">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div id="pic-carousel" class="carousel slide">
+							<ol class="carousel-indicators hidden-xs">
+								<li data-target="#pic-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#pic-carousel" data-slide-to="1"></li>
+								<li data-target="#pic-carousel" data-slide-to="2"></li>
+							</ol>
+
+							<div class="carousel-inner">
+								<div class="item active">
+									<img class="img-responsive img-full" src="img/fruit-cheese.jpg" alt="">
+								</div>
+								<div class="item">
+									<img class="img-responsive img-full" src="img/fridge.jpg" alt="">
+								</div>
+								<div class="item">
+									<img class="img-responsive img-full" src="img/denise.jpg" alt="">
+								</div>
+							</div>
+
+							<a class="left carousel-control" href="#pic-carousel" data-slide="prev">
+								<span class="icon-prev">
+								</span>
+							</a>
+							<a class="right carousel-control" href="#pic-carousel" data-slide="next">
+								<span class="icon-next">
+								</span>
+							</a>
+						</div>
+						<h2 class="brand-before">
+							<small>Welcome to</small>
+						</h2>
+						<h1 class="brand-name">Healthy Homemade Cuisine</h1>
+						<hr class="tagline-divider">
+						<h2>
+							<small>By
+								<strong>Denise Crow
+								</strong>
+							</small>
+						</h2>
 					</div>
 				</div>
-				
-			</main>
-			<hr>
-			<footer>
-				<p>&copy; 2015 Healthy Homemade Cuisine - All Rights Reserved</p>
-			</footer>
+			</div>
 		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<p>Copyright &copy; Healthy Homemade Cuisine 2015</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+			
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>	
+		
+		<script>
+			$('.carousel').carousel({
+				interval: 5000
+			})
+		</script>
+    
 	</body>
 </html>
