@@ -121,6 +121,10 @@ hr {
   text-align: center;
 }
 
+.sample {
+    text-align: center;
+}
+
 p>strong {
   font-weight: 600;
 }
@@ -134,6 +138,15 @@ footer {
 footer p {
     margin: 0;
     padding: 50px 0;
+}
+
+.contact {
+    background: #95a5a6;
+}
+
+.contact p,
+.contact a {
+    color: #ecf0f1;
 }
 
 @media screen and (min-width:768px) {
